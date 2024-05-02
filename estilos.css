@@ -1,0 +1,562 @@
+@font-face{
+    font-family: 'Nanum Myeongjo', serif;
+    src: url(Cormorant-Italic-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    src: url(NanumMyeongjo-Bold.ttf);
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Esto oculta cualquier contenido que se desborda horizontalmente */
+}
+
+/* Estilos específicos para index.html */
+/* Estilos específicos para fondo-página-index.html */
+.home-index{
+    background-image: url('./Imágenes/Obras/Background-index.jpg');
+    background-size: cover; 
+    background-position: center; 
+    
+}
+
+.título-página{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+}
+
+.título-página h1{
+    font-family: 'Nanum Myeongjo', serif;
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.título-página h1{
+    padding-right: 30px;
+}
+
+.secciones{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.secciones a{
+    font-family: 'Nanum Myeongjo', serif;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+.secciones p{
+    padding-right: 30px;
+}
+
+/* Estilos específicos para texto introductorio home */
+.texto-introductorio-home{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Estilos específicos para carrousel-historia */
+.carousel {
+    width: 500%;
+    overflow: hidden;
+}
+ 
+.carousel-inner { 
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+ 
+.carousel-item{
+    width: calc(120% / 12); /* Calcula el ancho para que haya espacio entre las imágenes */
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
+    box-sizing: border-box;
+}
+
+.carousel-item:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    8.33% {margin-left: 0%;}
+    
+    16.66% {margin-left: -100%;}
+    24.99% {margin-left: -100%;}
+    
+    33.32% {margin-left: -200%;}
+    41.65% {margin-left: -200%;}
+    
+    49.98% {margin-left: -300%;}
+    58.31% {margin-left: -300%;}
+    
+    66.64% {margin-left: -400%;}
+    74.97% {margin-left: -400%;}
+    
+    83.30% {margin-left: -500%;}
+    91.63% {margin-left: -500%;}
+    
+    99.96% {margin-left: -600%;}
+}
+
+.texto-home{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Estilos específicos para historia.html */
+.home-historia{
+    background-color: #E7E6DF;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.navbar-brand{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+}
+
+.navbar-brand h2{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.navbar-brand h2{
+    padding-right: 30px;
+}
+
+.título-sección-historia{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: -2%;
+}
+
+.título-sección-historia p{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    font-style: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.info-arte-minimalista{
+   font-family: 'Nanum Myeongjo', serif;
+   margin-top: 3%;
+   margin-left: 3%;
+   margin-right: 3%;
+   margin-bottom: 3%;
+   font-size: 20px;
+   text-align: justify;
+   color: black;
+}
+
+/* Estilos específicos para artistas.html */
+.home-artistas{
+    background-color: #E7E6DF;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.navbar-brand{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.navbar-brand h3{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.navbar-brand h3{
+    padding-right: 30px;
+}
+
+.título-sección-artistas{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: -2%;
+}
+
+.título-sección-artistas p{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.texto-introductorio-sección-artistas{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.card-container-artistas {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos envuelvan a la siguiente línea si no hay espacio suficiente */
+    justify-content: space-between; /* Para distribuir los elementos horizontalmente */
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Estilos para cada tarjeta */
+.card-artistas {
+    flex-basis: calc(50% - 20px); /* Establecer el ancho de cada tarjeta */
+    margin-bottom: 20px; /* Margen inferior entre cada tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para asegurar que la imagen no sobresalga */
+    position: relative;
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-artistas img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.SegundaImagen {
+    position: absolute; /* Posicionamos absolutamente dentro de la tarjeta */
+    top: 0;
+    left: 0;
+    width: 100%; /* Igualamos el ancho */
+    height: auto; /* Mantenemos la relación de aspecto */
+    display: none; /* Ocultamos la SegundaImagen por defecto */
+}
+
+/* Cuando se pasa el cursor sobre la tarjeta, mostramos la SegundaImagen y ocultamos la PrimeraImagen */
+.PrimeraImagen:hover {
+    opacity: 0; /* Hacemos la PrimeraImagen transparente */
+}
+
+.card-artistas:hover .SegundaImagen {
+    display: block;
+}
+  
+/* Estilos para el título de la tarjeta */ 
+.card-title {
+    font-size: 1.25rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 10px; /* Espacio entre el título y el texto */
+    margin-left: 3%;
+}
+  
+/* Estilos para el texto de la tarjeta */
+.card-text {
+    font-size: 1rem; /* Tamaño de fuente del texto */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Estilos específicos para obras.html */
+.home-obras{
+    background-color: #E7E6DF;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.navbar-brand{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.navbar-brand h4{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.navbar-brand h4{
+    padding-right: 30px;
+}
+
+.título-sección-obras{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: -2%;
+}
+
+.título-sección-obras p{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.texto-introductorio-sección-obras{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: black; 
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Estilos específicos para gallery-sección-obras */
+.gallery {
+    flex-basis: calc(30% - 20px); /* Establecer el ancho de cada tarjeta */
+    margin-bottom: 20px; /* Margen inferior entre cada tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para asegurar que la imagen no sobresalga */
+}
+
+.gallery-container-obras {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos envuelvan a la siguiente línea si no hay espacio suficiente */
+    justify-content: space-between; /* Para distribuir los elementos horizontalmente */
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.gallery:nth-child(3n) {
+    margin-right: 0; 
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.desc {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para museos.html */
+.home-museos{
+    background-color: #E7E6DF;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.navbar-brand{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.navbar-brand h5{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.navbar-brand h5{
+    padding-right: 30px;
+}
+
+.título-sección-museos{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: -2%;
+}
+
+.título-sección-museos p{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.texto-introductorio-sección-museos{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* Estilos específicos para tarjetas museos del mundo */
+.card-container-museos {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos envuelvan a la siguiente línea si no hay espacio suficiente */
+    justify-content: space-between; /* Para distribuir los elementos horizontalmente */
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card-body-museos {
+    flex-basis: calc(50% - 20px); /* Establecer el ancho de cada tarjeta */
+    margin-bottom: 20px; /* Margen inferior entre cada tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para asegurar que la imagen no sobresalga */
+}
+  
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-body-museos img {
+    width: 95%; /* Para que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Para mantener la relación de aspecto */
+    border-radius: 8px; /* Borde redondeado */
+    margin-left: 3%;
+    margin-top: 3%;
+}
+  
+/* Estilos para el título de la tarjeta */
+.card-body-museos p{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    font-size: 1.25rem; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espacio entre el título y el texto */
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+/* Estilos específicos para contacto.html */
+.home-contacto{
+    background-color: #E7E6DF;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.navbar-brand{
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.navbar-brand h6{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.navbar-brand h6{
+    padding-right: 30px;
+}
+
+.título-sección-contacto p{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -3%;
+}
+
+.texto-sección-contacto{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: black; 
+    font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Estilos específicos para formulario */
+form{
+    font-family: 'Nanum Myeongjo', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: -3%;
+}
+
+form p {
+    text-align: center;
+}
+
+*{box-sizing: border-box;}
+
+form{
+    width: 40%;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color:brown;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: 0.3s;
+}
+
+/* Estilos específicos footer */
+.footer{
+    font-family: 'Nanum Myeongjo', serif 700;  
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
